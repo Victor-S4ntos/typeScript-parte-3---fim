@@ -62,7 +62,7 @@ export class NegociacaoController {
                 });
             })
             .then(negociacoesDeHoje => {
-                for(let negociacao of negociacoesDeHoje) {
+                for (let negociacao of negociacoesDeHoje) {
                     this.negociacoes.adiciona(negociacao);
                 }
                 this.negociacoesView.update(this.negociacoes);
