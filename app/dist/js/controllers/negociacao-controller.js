@@ -10,8 +10,6 @@ import { Negociacao } from '../models/negociacao.js';
 import { Negociacoes } from '../models/negociacoes.js';
 import { MensagemView } from '../views/mensagem-view.js';
 import { NegociacoesView } from '../views/negociacoes-view.js';
-import { inspect } from '../decorators/inspect.js';
-import { domInjector } from '../decorators/dom-injector.js';
 export class NegociacaoController {
     constructor() {
         this.negociacoes = new Negociacoes();
@@ -49,15 +47,5 @@ export class NegociacaoController {
     }
 }
 __decorate([
-    domInjector('#data')
-], NegociacaoController.prototype, "inputData", void 0);
-__decorate([
-    domInjector('#quantidade')
-], NegociacaoController.prototype, "inputQuantidade", void 0);
-__decorate([
-    domInjector('#valor')
-], NegociacaoController.prototype, "inputValor", void 0);
-__decorate([
-    inspect,
     logarTempoDeExecucao()
 ], NegociacaoController.prototype, "adiciona", null);
