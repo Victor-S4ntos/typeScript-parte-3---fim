@@ -1,17 +1,17 @@
 {
     "compilerOptions": {
-      "moduleResolution": "node",
-      "baseUrl": ".",
-      "paths": {
-        "undici-types": ["node_modules/undici-types"]
-      },
-      "outDir": "dist/js",
-      "target": "ES6",
-      "noEmitOnError": true,
-      "noImplicitAny": true,
-      "removeComments": true,
-      "strictNullChecks": true,
-      "experimentalDecorators": true
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "undici-types": ["node_modules/undici-types"]
     },
-    "include": ["app/**/*", "js"]
+    "outDir": "dist/js",
+    "target": "ES6",
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "strictNullChecks": true,
+    "experimentalDecorators": true
+  },
+  "include": ["app/**/*", "js"]
 }
